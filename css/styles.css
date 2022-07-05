@@ -1,5 +1,7 @@
 /* custom property */
+/* al root se lo conoce como pseudoselectores */
 :root {
+    /* a estas variables se las conoce como custom-properties */
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
@@ -45,7 +47,9 @@ body {
 
 .navegacion-principal {
     display: flex;
-    flex-direction: row; /* por defecto */
+    flex-direction: row; /* por defecto, otra es column */
+    /* flex-direction:row -> justify-content:space-between */
+    /* flex-direction:column -> align-items:center */
     justify-content: space-between;
 }
 
@@ -53,7 +57,7 @@ body {
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
-    font-weight: 700; /* 700 = bold */
+    font-weight: 700; /* 700 = bold , 400 = normal */
     padding: 1rem;
 }
 
